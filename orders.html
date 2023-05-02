@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
+
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="renderOrders()">
+    <header>
+      <div class="header-container">
+        <div class="logo" id="logo">Mini ERP</div>
+        <nav>
+          <ul>
+            <li>
+              <a href="/posts.html">Posts</a>
+            </li>
+            <li>
+              <a href="/products.html">Products</a>
+            </li>
+            <li><a href="/orders.html">Orders</a></li>
+            <li><a href="/media.html">Media</a></li>
+          </ul>
+        </nav>
+        <button class="sync-btn" id="syncBtn">Synka nu</button>
+      </div>
+    </header>
+    <main>
+      <div>
+        <h2>Beställningar</h2>
+        <table id="ordersTable">
+          <tr>
+            <th>Order id</th>
+            <th>Status</th>
+            <th>Totalbelopp</th>
+            <th>Datum</th>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

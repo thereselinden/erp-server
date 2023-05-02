@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: 4rem 4rem 0 4rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+main > div {
+  width: 600px;
+}
+h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  margin-bottom: 2rem;
+  font-size: 0.7;
+}
+
+img {
+  width: 100px;
+}
+
+header {
+  border-bottom: 1px solid lightgrey;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul > li {
+  list-style: none;
+  cursor: pointer;
+}
+
+nav ul li > a {
+  text-decoration: none;
+  color: rgb(64, 64, 236);
+}
+
+header button {
+  all: unset;
+  border-radius: 8px;
+  border: 2px solid lightgray;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+table {
+  width: 600px;
+}
+
+tbody {
+  display: grid;
+  gap: 2rem;
+}
+
+th {
+  text-align: start;
+  margin-bottom: 1.5rem;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* tr:nth-child(n + 2) {
+  border-bottom: 1px solid lightgrey;
+} */
+
+tr:not(:first-child):not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 2rem;
+}
+
+.post-table tr {
+  grid-template-columns: 1fr 4fr;
+}
+
+#mediaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.order-status {
+  border: 1px solid lightgrey;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.completed-order {
+  background-color: rgb(112, 165, 112);
+  border: 1px solid rgb(112, 165, 112);
+  color: #fff;
+}
+
+.pending-order {
+  background-color: rgb(228, 89, 175);
+  border: 1px solid rgb(228, 89, 175);
+  color: #fff;
+}
+
+.cancelled-order {
+  background-color: rgb(229, 51, 51);
+  border: 1px solid rgb(229, 51, 51);
+  color: #fff;
+}
