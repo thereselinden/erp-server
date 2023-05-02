@@ -110,10 +110,6 @@ tr {
   gap: 4rem;
 }
 
-/* tr:nth-child(n + 2) {
-  border-bottom: 1px solid lightgrey;
-} */
-
 tr:not(:first-child):not(:last-child) {
   border-bottom: 1px solid lightgrey;
   padding-bottom: 2rem;
